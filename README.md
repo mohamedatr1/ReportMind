@@ -16,7 +16,6 @@
 [![Groq](https://img.shields.io/badge/Groq-LLaMA_3.3_70B-F55036?style=for-the-badge&logo=groq&logoColor=white)](https://groq.com)
 [![Tavily](https://img.shields.io/badge/Tavily-Search_API-0EA5E9?style=for-the-badge)](https://tavily.com)
 [![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/mohamedatr1/ReportMind?style=for-the-badge&color=FBBF24)](https://github.com/mohamedatr1/ReportMind/stargazers)
 
 <br/>
 
