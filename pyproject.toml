@@ -1,0 +1,21 @@
+[project]
+name = "react"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+drequires-python = ">=3.10"
+dependencies = [
+    "isort>=8.0.1",
+    "langchain>=1.2.15",
+    "langchain-groq>=1.1.2",
+    "langchain-community>=0.2.15",
+    "langgraph>=0.2.18",
+    "langchain-tavily>=0.2.18",
+    "langchainhub>=0.1.21",
+    "python-dotenv>=1.2.2",
+    "tavily-python>=0.3.3",
+    "rich>=13.7.0",
+    "colorama>=0.4.4",
+    "click>=8.0.0",
+    "alive-progress>=3.1.4",
+]
