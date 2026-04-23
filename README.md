@@ -208,19 +208,6 @@ ReportMind/
 
 You can also adjust `max_results` in `TavilySearchResults(max_results=5)` to control how many web sources are retrieved per query.
 
----
-
-## 🛣️ Roadmap
-
-- [ ] Support for custom output formats (PDF, DOCX)
-- [ ] Multi-query batch processing
-- [ ] Configurable LLM models and temperatures
-- [ ] Web UI via Streamlit or Gradio
-- [ ] Report templates (executive summary, technical brief, news digest)
-- [ ] Source citation formatting (APA, MLA)
-- [ ] Slack / email report delivery integration
-
----
 
 ## 🤝 Contributing
 
