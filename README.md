@@ -25,7 +25,10 @@
 </div>
 
 
-<video src="./videos/video.mp4" controls autoplay loop muted width="100%"></video>
+
+https://github.com/user-attachments/assets/d0e6df85-ed6a-4d0b-a30d-acc4e163667d
+
+
 
 
 ---
