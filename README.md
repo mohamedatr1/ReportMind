@@ -48,8 +48,6 @@ It combines the speed of **Groq's inference engine**, the reasoning of **LLaMA 3
 | 🧠 **LLaMA 3.3 70B Reasoning** | State-of-the-art open model hosted on Groq for near-instant inference |
 | 📄 **Auto Report Generation** | Reports saved as timestamped `.md` files in a `reports/` folder |
 | 🎨 **Rich Terminal UI** | Beautiful progress bars, tables, and styled output via Rich |
-| ⚡ **CLI-First Design** | Pass queries directly or enter them interactively |
-| 🔧 **Verbose Mode** | Inspect every reasoning step and tool call with `--verbose` |
 | 🌍 **Cross-Platform** | Works on Windows, macOS, and Linux |
 
 ---
@@ -57,7 +55,7 @@ It combines the speed of **Groq's inference engine**, the reasoning of **LLaMA 3
 ## 🎬 Demo
 
 ```
-$ python reportmind.py "Latest breakthroughs in quantum computing 2025"
+$ python main.py "Latest breakthroughs in quantum computing 2025"
 
   ✓ Agent initialized
   ✓ Search completed          ████████████████ 100%
@@ -77,7 +75,7 @@ $ python reportmind.py "Latest breakthroughs in quantum computing 2025"
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                     ReportMind CLI                      │
-│                   (reportmind.py)                       │
+│                   (main.py)                       │
 └────────────────────────┬────────────────────────────────┘
                          │
                          ▼
@@ -106,7 +104,7 @@ $ python reportmind.py "Latest breakthroughs in quantum computing 2025"
 
 ### Prerequisites
 
-- Python **3.8+**
+- Python **3.10+**
 - A **Groq API key** → [Get one free](https://console.groq.com)
 - A **Tavily API key** → [Get one free](https://tavily.com)
 
@@ -150,7 +148,7 @@ python-dotenv
 ### Interactive Mode
 
 ```bash
-python reportmind.py
+python main.py
 ```
 
 You'll be prompted to enter your query in a styled terminal interface.
@@ -158,29 +156,24 @@ You'll be prompted to enter your query in a styled terminal interface.
 ### Direct Query Mode
 
 ```bash
-python reportmind.py "Impact of AI on the job market in 2025"
+python main.py "Impact of AI on the job market in 2026"
 ```
 
-### Verbose Mode (see reasoning steps)
-
-```bash
-python reportmind.py "Best open-source LLMs right now" --verbose
-```
 
 ### Examples
 
 ```bash
 # Research a topic
-python reportmind.py "State of renewable energy adoption globally"
+python main.py "State of renewable energy adoption globally"
 
 # Competitive analysis
-python reportmind.py "Compare GPT-4o vs Claude 3.5 vs Gemini 1.5 capabilities"
+python main.py "Compare GPT-4o vs Claude 3.5 vs Gemini 1.5 capabilities"
 
 # News research
-python reportmind.py "Latest developments in the Israel-Hamas conflict"
+python main.py "Latest developments in the Israel-Hamas conflict"
 
 # Technical deep-dive
-python reportmind.py "How does Retrieval Augmented Generation work in production"
+python main.py "How does Retrieval Augmented Generation work in production"
 ```
 
 ---
@@ -189,7 +182,7 @@ python reportmind.py "How does Retrieval Augmented Generation work in production
 
 ```
 ReportMind/
-├── reportmind.py        # Main entry point
+├── main.py              # Main entry point
 ├── .env.example         # Environment variable template
 ├── requirements.txt     # Python dependencies
 ├── reports/             # Auto-created; stores generated reports
